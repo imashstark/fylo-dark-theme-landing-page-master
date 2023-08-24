@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 20vh;
+    background-color: hsl(217, 28%, 15%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8%;   
+    align-items: center;
+    
+}
+body {
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center align the site horizontally */
+}
+.logo{
+    height: 40px;
+    margin-left: 3%;
+}
+.nav{
+    list-style: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 150px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+.nav-items li{
+    list-style: none;
+}
+
+.nav-items li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 700;
+}
+main{
+    background-color: hsl(222, 26%, 15%);
+}
+.container{
+    width: auto;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    /* border: red 2px solid; */
+    
+}
+.container img{
+    margin-top: 100px;
+}
+.front-page p:nth-child(1){
+    font-size: 2rem;
+    margin-top: 60px;
+    font-weight: 700;
+}
+.front-page p:nth-child(2){
+    font-size: 2rem;
+    margin-top: 5px;
+    font-weight: 700;   
+}
+.front-page p:nth-child(3){
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: 400;    
+}
+
+#btn{
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    font-size: large;
+    color: #fdfdfd;
+    cursor: pointer;
+    background: linear-gradient(to bottom, hsl(176, 83%, 72%) ,hsl(176, 92%, 75%));
+    margin-top: 30px;
+    font-weight: 400;
+    width: 250px;
+}
+.features{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 94px 150px;
+    margin: 130px 0;
+    
+    color: white;
+    font-family: sans-serif;
+}
+.feature{
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;    
+}
+
+.feature h3{
+    margin-bottom: 10px;
+    margin-top: 3%;
+}
+.feature p{
+    font-weight: 200;
+    line-height: 1.3vw;
+    width: 400px;
+}
+
+.feature img{
+    height: 10vh;
+}
+
+.productive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Open Sans';  
+    font-weight: 400;  
+}
+
+.productivity h3{
+    font-size: 2.2rem;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.productivity p{
+    line-height: 2rem;
+    width: 600px;       
+}
+.productivity p:nth-child(3){
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.productivity a{
+    text-decoration: none;
+    margin-top: 2vw;
+    color: white;
+    font-size: 20px;
+}
+
+.productivity a:hover{
+    text-decoration: underline;    
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 150px;
+    color: white;
+    margin-bottom: 250px;
+}
+
+.review{
+    background-color: hsl(222, 28%, 18%);
+    border-radius: 3%;
+    padding: 1.5em;
+    position: relative;
+    width: 25vw;
+}
+
+/* .review:first-child::before{
+    content: url("images/bg-quotes.png");
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    z-index: -1;
+} */
+.life{
+    position: absolute;
+    top: 152.3vw;
+    left: 122px;
+}
+.profile{
+    display: flex;
+    margin-top: 5%;
+    gap: 0.8vw;
+}
+.profile img{
+    border-radius: 50%;
+    height: 3em;
+}
+
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.profile-name p{
+    font-size: small;
+}
+.review-info{
+    line-height: 1.3vw;
+    font-family: 'open sans';
+    font-size: medium;
+}
+
+.access{
+    background-color: #232d42;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25vw;
+    padding: 3vw;
+    border-radius: 10px;
+    box-shadow: rgba(9, 30, 66, 0.4) 0px 2px 8;
+    color: white;
+    gap: 25px;
+    font-family: 'open sans';
+    position: absolute;
+    top: 3355px;
+}
+.access h3{
+    font-weight: 50 ;
+    text-align: center;   
+}
+
+.access h1{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+input[type="email"]{
+    width: 300px;
+    height: 40px;
+    padding: 20px 47px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+input[type="submit"]{
+    width: 200px;
+    border-radius: 50px;
+    background-color: #8adbe4;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.button{
+    display: flex;
+    align-content: center;   
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+.footer{
+    height: 60vh;
+    background-color: #0c1524;
+    
+}
+.sign-up{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.sign-up p{
+    width: 30vw;    
+}
+
+.icon-phone{
+    margin-right: 10px;
+    margin-top: 2vh;    
+}
+
+.info{
+    font-weight: small;
+}
+
+.about-us li{
+    list-style-type: none;
+    font-size: 1.3em;
+}
+
+.Terms ul{
+    list-style-type: none;
+    font-size: 1.3em;
+}
+
+.about-us li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Terms li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo-footer{
+    margin-bottom: 30px;
+}
+
+.footer_flex{
+    display: flex;
+    margin-top: 25vh;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.location-image p{
+    font-family: 'open sans';
+}
+
+.socials img{
+    height: 36px;
+    margin-right: 1vw;
+
+}
